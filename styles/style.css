@@ -2,7 +2,6 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  margin: 0;
   background-color: var(--background-color);
   font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
@@ -114,13 +113,10 @@
   text-shadow: 4px 4px var(--accent-color);
 }
 
-.header__epigraph {
-  padding-bottom: 10px;
-}
-
 .header__epigraph-text {
   font-weight: bold;
   line-height: 23.4px;
+  margin-bottom: 15px;
 }
 
 .main {
@@ -130,25 +126,23 @@
 .title-decor {
   background-color: var(--accent-color);
   color: var(--subtitle-color);
-  margin: 0;
-  margin-top: 20px;
-  margin-bottom: 10px;
 }
 
 .main__paragraph-subtitle {
   font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .main__paragraph-title {
   color: var(--decorate-color);
   font-size: 18px;
   line-height: 23.4px;
-  margin: 0;
 }
 
 .main__paragraph-text {
   color: var(--text-color);
-  margin: 0;
+  line-height: 23.4px;
 }
 
 .main__second-paragraph {
@@ -162,6 +156,8 @@
 .main__third-paragraph-subtitle {
   font-weight: normal;
   font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .link {
@@ -247,12 +243,15 @@
   .header__title {
     font-size: clamp(7.25rem, 5.0536rem + 9.9274vw, 9.8125rem);
     line-height: 82.5%;
-    margin: 0;
+  }
+
+  .main__first-paragraph {
+    padding-top: 40px;
   }
 
   .footer__title {
     font-size: clamp(7.25rem, 5.0536rem + 9.9274vw, 9.8125rem);
-    margin: 0;
+    line-height: 82.5%;
   }
 
 }
@@ -269,7 +268,7 @@
   }
   
   .header::after {
-    bottom: calc(var(--gap) + 20px);
+    bottom: calc(var(--gap) + 10px);
     left: calc(var(--gap) + 10px);
   }
   
@@ -277,21 +276,20 @@
     top: calc(var(--gap) + 11px);
     right: calc(var(--gap) + 20px);
   }
+  
+  .header__theme-menu {
+    margin-top: 25px;
+  }
 
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   .header__epigraph {
     max-inline-size: 364px;
     justify-self: end;
-    padding-bottom: 95px;
-  }
-
-  .header__theme-menu-list {
-    margin-top: 45px;
+    margin-bottom: 50px;
   }
 
   .main {
@@ -302,23 +300,23 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: calc(var(--gap) + 10px);
-    padding-top: 34px;
+    padding-top: 60px;
   }
 
   .main__paragraph-title {
-    margin-top: 20px;
     max-inline-size: 236px;
+    margin-top: 20px;
   }
 
   .main__second-paragraph {
-    margin-top: 85px;
+    margin-top: 80px;
   }
 
   .main__third-paragraph {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: calc(var(--gap) + 10px);
-    margin-top: 75px;
+    margin-top: 60px;
   }
 
   .main__gallery-section {
@@ -396,16 +394,16 @@
   .header__epigraph {
     max-inline-size: 491px;
     justify-self: end;
-    margin-top: 25px;
+    margin-top: 60px;
   }
 
   .header__theme-menu {
     justify-self: center;
     align-items: start;
+    margin: 0;
   }
 
   .header__theme-menu-list {
-    margin: 0;
     padding-left: 15px;
     flex-direction: row;
   }
@@ -421,7 +419,7 @@
   }
 
   .main__first-paragraph {
-    padding-top: 30px;
+    padding-top: 40px;
     gap: var(--gap);
   }
 
