@@ -300,7 +300,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: calc(var(--gap) + 10px);
-    padding-top: 60px;
+    padding-top: 40px;
   }
 
   .main__paragraph-title {
