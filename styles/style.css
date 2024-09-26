@@ -19,7 +19,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  min-block-size: 658px;
+  min-block-size: 668px;
   block-size: 100vh;
   padding: var(--gap) var(--gap) 0 var(--gap);
 }
