@@ -296,7 +296,7 @@
     margin-top: 80px;
   }
 
-  .main__who-paragraph {
+  .main__how-paragraph {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: calc(var(--gap) + 10px);
